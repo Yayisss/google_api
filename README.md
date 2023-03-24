@@ -1,2 +1,2 @@
-# YT-Django-Allauth-Google
+# Django-Allauth-Google
  
