@@ -20,6 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+# clave que te permite pasar de forma segura
 SECRET_KEY = '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'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -29,7 +30,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+# Aqui entran todas las dependencias que usa el proyecto
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -133,6 +134,8 @@ STATIC_URL = '/static/'
 SITE_ID = 2
 LOGIN_REDIRECT_URL = '/'
 
+
+#Para permitir que los usuarios accedan a la app con varios proveedores
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
         'SCOPE': [
